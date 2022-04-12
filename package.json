@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon server",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production nodemon server"
+    "start": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
