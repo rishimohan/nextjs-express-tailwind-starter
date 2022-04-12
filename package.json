@@ -4,9 +4,9 @@
   "description": "Testing",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "nodemon server",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "cross-env NODE_ENV=production nodemon server"
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
