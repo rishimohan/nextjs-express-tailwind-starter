@@ -9,14 +9,16 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express()
 
-  server.get("/api/shows", (req, res) => {
-    return res.end("Henlo world 11")
+  server.get("/api/text", (req, res) => {
+    return res.json({
+      heading: "Next.js Tailwind Starter",
+      subHeading: "with Express Server",
+    });
   });
 
   server.all('*', (req, res) => {
     return handle(req, res)
   })
-
 
   server.listen(port, (err) => {
     if (err) throw err
